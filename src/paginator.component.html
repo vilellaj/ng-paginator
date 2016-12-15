@@ -1,0 +1,24 @@
+<div class="fi-paginator-centered">
+    <ul class="fw-footer pagination wizard">
+        <li class="previous first" [ngClass]="{disabled: currentPage == 0}">
+            <a class="a-prevent" href="" (click)="goToFirst()">
+                <i class="zmdi zmdi-more-horiz"></i>
+            </a>
+        </li>
+        <li class="previous" [ngClass]="{disabled: currentPage == 0}">
+            <a class="a-prevent" href="" (click)="pageChanged(0)">
+                <i class="zmdi zmdi-chevron-left"></i>
+            </a>
+        </li>
+        <li class="next" [ngClass]="{disabled: currentPage == totalPages - 1}">
+            <a class="a-prevent" href="" (click)="pageChanged(1)">
+                <i class="zmdi zmdi-chevron-right"></i>
+            </a>
+        </li>
+        <li class="next last" [ngClass]="{disabled: currentPage == totalPages - 1}">
+            <a class="a-prevent" href="" (click)="goToLast()">
+                <i class="zmdi zmdi-more-horiz"></i>
+            </a>
+        </li>
+    </ul>
+</div>
